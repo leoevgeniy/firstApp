@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap-icons.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/fontello.css' %}" class="style">
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
@@ -424,6 +424,16 @@
         </div>
     </div>
 </footer>
+
+<svg class="bi" width="32" height="32" fill="currentColor">
+    <use xlink:href="bootstrap-icons.svg#heart-fill"/>
+  </svg>
+  <svg class="bi" width="32" height="32" fill="currentColor">
+    <use xlink:href="bootstrap-icons.svg#toggles"/>
+  </svg>
+  <svg class="bi" width="32" height="32" fill="currentColor">
+    <use xlink:href="bootstrap-icons.svg#shop"/>
+  </svg>
 <!-- Модальное окно -->
 <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
