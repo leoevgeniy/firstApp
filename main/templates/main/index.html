@@ -10,11 +10,13 @@
     <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'main/css/bootstrap-icons.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+    <link rel="icon" href="bootstrap-icons.svg">
     <link rel="stylesheet" href="{% static 'main/css/fontello.css' %}" class="style">
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <title>Hello, world!</title>
 </head>
 <body>
+    
 <header>
     <div class="container">
         <div class="row">
@@ -23,7 +25,7 @@
                 <div class="itd_play" data-bs-toggle="modal" data-bs-target="#mymodal">
                     <div class="itd_triangle"></div>
                 </div>
-                <a href="#footer" class="btn btn-itd btn-lg text-appercase">Заказать</a>
+                <a href="{% url 'figma' %}" class="btn btn-itd btn-lg text-appercase">Заказать</a>
             </div>
         </div>
     </div>
@@ -425,15 +427,15 @@
     </div>
 </footer>
 
-<svg class="bi" width="32" height="32" fill="currentColor">
-    <use xlink:href="bootstrap-icons.svg#heart-fill"/>
-  </svg>
-  <svg class="bi" width="32" height="32" fill="currentColor">
-    <use xlink:href="bootstrap-icons.svg#toggles"/>
-  </svg>
-  <svg class="bi" width="32" height="32" fill="currentColor">
-    <use xlink:href="bootstrap-icons.svg#shop"/>
-  </svg>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 text-center justify-content-center align-items-center">
+                <i class="bi bi-app-indicator" style="font-size: 30rem; font-weight: bold; color: #0dcaf0 "></i>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Модальное окно -->
 <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
